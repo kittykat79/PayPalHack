@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+
+<category><pattern>*</pattern>
+<template>I didn't get you.. Could you please refine your response..</template>
+</category>
+
+   <category>
+      <pattern>Hi</pattern>
+      <template>Hi! Nice to meet you.. I am Yoshi..</template>
+   </category>
+
+   <category>
+   	   <pattern>Hey * I am *</pattern>
+   	   <template>Hey <star index="2"/>.. I am Yoshi.. Its a pleasure to meet you..</template>
+   </category>
+   <category>
+   	   <pattern>Hi * I am * </pattern>
+   	   <template><srai>Hey * I am * </srai></template>
+   </category>
+
+   <category>
+   	   <pattern> * bye * </pattern>
+   	   <template>It was pleasure seeing you again.. Anytime you need Yoshi will be here for you..</template>
+   	</category>
+
+    <category>
+    	<pattern>* help * me *</pattern>
+    	<template>Of course.. That's what I am here for.. What can I do for you..</template>
+    </category>
+    <category>
+    	<pattern>* help me *</pattern>
+    	<template><srai>* help * me *<</srai></template>
+    </category>
+    <category>
+    	<pattern>* help me</pattern>
+    	<template><srai>* help * me *<</srai></template>
+    </category>
+
+    <category>
+    	<pattern>* ask * help *</pattern>
+    	<template><srai>* help * me *</srai></template>
+    </category>
+
+
+</aiml>

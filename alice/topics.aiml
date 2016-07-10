@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+
+   <category>
+      <pattern>I want to fix *</pattern>
+      <template>DEVALERT: <set name="topic">BEST_RATES</set> <set name="item"><star/></set>
+      </template>
+   </category>
+
+   <category>
+      <pattern>I want to get my *</pattern>
+      <template>DEVALERT: <set name="topic">BEST_RATES</set> <set name = "item"><star/></set>
+      </template>
+   </category>
+  
+   <category>
+   	  <pattern>* goal *</pattern>
+   	  <template>Hey Champ.. Let's setup your next goal.. What do you wish to have by next year.. Let's <set name="topic">SAVE</set>.. SAVING = EARNING..</template>
+   </category>
+
+   <category>
+   	   <pattern>Pls suggest * jobs near me</pattern>
+   	   <!--strip some-->
+       <template>DEVALERT: <set name="topic">JOBS</set> <set name="jobType"><star/></set>
+       </template>
+   </category>
+   <category>
+   	   <pattern>Please suggest * jobs near me</pattern>
+   	   <template><srai>Pls suggest * jobs near me</srai></template>
+   </category>
+      <category>
+   	   <pattern>can you please suggest * jobs near me</pattern>
+   	   <template><srai>Pls suggest * jobs near me</srai></template>
+   </category>
+      <category>
+   	   <pattern>can u pls suggest * jobs near me</pattern>
+   	   <template><srai>Pls suggest * jobs near me</srai></template>
+   </category>
+
+   
+   <category>
+   	    <pattern>* earn * free time</pattern>
+   	    <template>DEVALERT: <set name="topic">JOBS</set> <set name="jobType">freelance</set>
+   	    </template>
+   </category>
+  
+   <category>
+   	     <pattern>earn * free time</pattern>
+   	     <template><srai>* earn * free time</srai></template>
+   </category>
+
+     <category>
+        <pattern>How can I buy *</pattern>
+        <template>DEVALERT: <set name="topic">SAVE</set> checkSavingsBuy <star/>
+        </template>
+   </category>
+   
+    <category>
+   	    <pattern>* study in *</pattern>
+   	    <template>DEVALERT: <set name="topic">SAVE</set> checkSavingsStudy <star index="2"/>
+   	    </template>
+   </category>
+
+  <category>
+   	    <pattern>should I spend on *</pattern>
+   	    <!--strip this now later-->
+        <template>DEVALERT:  <set name="topic">SAVE</set> checkSavingsSpend <star/>
+        </template>
+   </category>
+ 
+
+</aiml>

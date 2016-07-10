@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+   <category>
+      <pattern>* want to have * by * days *</pattern>
+      <template>DEVALERT: <set name="topic">SAVE</set> <star index="2"/> <star index="3"/></template>
+   </category>
+   <category>
+      <pattern>* want to have * by * days</pattern>
+      <template>DEVALERT: <set name="topic">SAVE</set> <star index="2"/> <star index="3"/></template>
+   </category>
+   <category>
+       <pattern>* to get * by * days *</pattern>
+       <template>DEVALERT: <set name="topic">SAVE</set> <star index="2"/> <star index="3"/></template>
+   </category>
+   <category>
+       
+       <pattern>* to get * by * days</pattern>
+       <template>DEVALERT: <set name="topic">SAVE</set> <star index="2"/> <star index="3"/></template>
+   </category>
+
+
+   <category>
+      <pattern>SAVE *</pattern>
+      <template>In order to reach your goal, you need to save <star/>$ every day.. I know you can do it.. Let's make it happen..!!</template>
+   </category>
+</aiml>

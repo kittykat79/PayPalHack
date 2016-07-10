@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+   <category>
+      <pattern>* enjoying in *</pattern>
+      <template><star index="2"/></template>
+   </category>
+   
+
+   <category>
+      <pattern>* join me in *</pattern>
+      <template><star index=
+        "2"/></template>
+   </category>
+
+   <category>
+      <pattern>* at *</pattern>
+      <template><star index="2"/></template>
+   </category>
+
+   <category>
+      <pattern>* in *</pattern>
+      <template><star index="2"/></template>
+   </category>
+
+   <category>
+      <pattern>Heyy! * it is</pattern>
+      <template><star/></template>
+   </category>
+
+   <category>
+      <pattern>*</pattern>
+      <template><star/></template>
+   </category>
+  
+</aiml>
