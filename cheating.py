@@ -16,7 +16,14 @@ class cheating(object):
 obj = cheating("fix","doorknob")
 client=obj.actions()
 
-response = client.search('San Francisco')
+params = {
+    'term': 'doorknob',
+    'lang': 'en'
+}
+
+response=client.search('San Francisco', **params)
+
+#response = client.search('San Francisco')
 print(response.businesses)
 for i in range(3):
 	print(response.businesses[i].name)
