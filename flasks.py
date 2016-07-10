@@ -5,6 +5,10 @@ app = Flask(__name__)
 def success(name):
    return 'welcome %s' % name
 
+@app.route('/')
+def fun():
+	return "hel"
+
 @app.route('/login',methods = ['POST', 'GET'])
 def login():
    if request.method == 'POST':
@@ -15,4 +19,4 @@ def login():
       return redirect(url_for('success',name = user))
 
 if __name__ == '__main__':
-   app.run(debug = True)
+   app.run(debug = True,host='0.0.0.0', port=80)
